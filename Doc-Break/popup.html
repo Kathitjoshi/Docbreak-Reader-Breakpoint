@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DocBreak</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>📍 DocBreak</h1>
+    <p>Reader Breakpoints</p>
+  </div>
+
+  <div class="content">
+    <div class="button-group">
+      <button id="addBreakpoint" class="btn-primary">
+        ➕ Add Breakpoint
+      </button>
+      <button id="clearBreakpoints" class="btn-danger">
+        🗑️ Clear All
+      </button>
+    </div>
+
+    <div class="navigation-group">
+      <button id="prevBreakpoint" class="btn-nav">
+        ⬆️ Previous
+      </button>
+      <button id="nextBreakpoint" class="btn-nav">
+        ⬇️ Next
+      </button>
+    </div>
+
+    <div class="breakpoints-section">
+      <div class="section-title">
+        📋 Active Breakpoints
+        <span id="breakpointCount" class="count-badge">0</span>
+      </div>
+      
+      <div id="breakpointList" class="breakpoint-list scrollbar">
+        <div class="empty-state">
+          <div class="empty-state-icon">📖</div>
+          <div>No breakpoints yet</div>
+          <div class="empty-state-subtitle">Add breakpoints to mark important sections</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keyboard-shortcuts">
+      <h4>⌨️ Keyboard Shortcuts</h4>
+      <div class="shortcut">
+        <span>Add Breakpoint</span>
+        <span class="shortcut-key">Ctrl+Shift+B</span>
+      </div>
+      <div class="shortcut">
+        <span>Clear All</span>
+        <span class="shortcut-key">Ctrl+Shift+C</span>
+      </div>
+      <div class="shortcut">
+        <span>Next Breakpoint</span>
+        <span class="shortcut-key">Ctrl+Shift+E</span>
+      </div>
+      <div class="shortcut">
+        <span>Previous Breakpoint</span>
+        <span class="shortcut-key">Ctrl+Shift+Q</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "DocBreak - Reader Breakpoints",
+  "version": "1.0.0",
+  "description": "Bookmark multiple points in long web documents with visual breakpoints. Perfect for research and reading.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DocBreak - Add Reading Breakpoints",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "commands": {
+    "add-breakpoint": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B"
+      },
+      "description": "Add a breakpoint at current position"
+    },
+    "clear-breakpoints": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Clear all breakpoints"
+    },
+    "next-breakpoint": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J"
+      },
+      "description": "Navigate to next breakpoint"
+    },
+    "previous-breakpoint": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Navigate to previous breakpoint"
+    }
+  },
+  "author": "Kathit Hemul Joshi",
+  "homepage_url": "https://github.com/Kathitjoshi/Docbreak-Reader-Breakpoint"
+}
