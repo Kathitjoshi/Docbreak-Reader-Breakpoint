@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🐛 Bug Reports & Feature Requests
 
 Found a bug or have a feature idea? Please [open an issue](https://github.com/Kathitjoshi/Docbreak-Reader-Breakpoint/issues) on GitHub.
-Found a bug or have a feature idea? Please [open a pull request](https://github.com/Kathitjoshi/Docbreak-Reader-Breakpoint/pulls) on GitHub.
+or Please [open a pull request](https://github.com/Kathitjoshi/Docbreak-Reader-Breakpoint/pulls) on GitHub.
 
 
 ## 📧 Contact
